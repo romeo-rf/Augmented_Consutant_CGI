@@ -53,6 +53,7 @@ export function AddOfferingDialog({
     if (!selected || !issueName.trim()) return;
 
     const match: OfferingMatch = {
+      id: `manual-${Date.now()}`,
       issueName: issueName.trim(),
       issueDescription: issueDescription.trim() || issueName.trim(),
       offering: { id: selected.id, name: selected.name },
