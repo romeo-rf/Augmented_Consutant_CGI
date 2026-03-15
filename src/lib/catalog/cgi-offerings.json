@@ -1,0 +1,146 @@
+[
+  {
+    "id": "transformation-digitale",
+    "name": "Transformation Digitale",
+    "description": "Accompagnement stratégique et opérationnel de la transformation digitale des organisations : diagnostic de maturité, feuille de route, conduite du changement et mise en œuvre.",
+    "targetSectors": ["banque", "assurance", "retail", "industrie", "secteur-public", "énergie", "santé"],
+    "keywords": ["transformation", "digital", "digitalisation", "modernisation", "stratégie", "innovation"],
+    "valueProposition": "Accélération de la transformation digitale avec un ROI mesurable sous 12 mois grâce à une approche pragmatique et incrémentale."
+  },
+  {
+    "id": "cybersecurite",
+    "name": "Cybersécurité & Conformité",
+    "description": "Protection des systèmes d'information et mise en conformité réglementaire : audit de sécurité, SOC, gestion des identités, RGPD, NIS2, PCI-DSS.",
+    "targetSectors": ["banque", "assurance", "santé", "secteur-public", "défense", "énergie", "télécommunications"],
+    "keywords": ["cybersécurité", "sécurité", "conformité", "RGPD", "NIS2", "SOC", "IAM", "audit", "pentest", "RSSI"],
+    "valueProposition": "Réduction de 60% des incidents de sécurité grâce à une approche Zero Trust et une surveillance continue 24/7."
+  },
+  {
+    "id": "cloud-migration",
+    "name": "Migration Cloud & Modernisation",
+    "description": "Migration vers le cloud public, privé ou hybride : évaluation du patrimoine applicatif, stratégie cloud, migration, optimisation des coûts (FinOps).",
+    "targetSectors": ["banque", "assurance", "retail", "industrie", "télécommunications", "média"],
+    "keywords": ["cloud", "migration", "AWS", "Azure", "GCP", "hybride", "FinOps", "modernisation", "conteneurs", "kubernetes"],
+    "valueProposition": "Réduction de 30% des coûts d'infrastructure et amélioration de l'agilité avec une migration cloud sécurisée et progressive."
+  },
+  {
+    "id": "data-ia",
+    "name": "Data & Intelligence Artificielle",
+    "description": "Valorisation des données et déploiement de solutions IA : data platform, data governance, machine learning, IA générative, analytics avancé.",
+    "targetSectors": ["banque", "assurance", "retail", "santé", "industrie", "énergie", "télécommunications"],
+    "keywords": ["data", "IA", "intelligence artificielle", "machine learning", "analytics", "big data", "data lake", "IA générative", "LLM"],
+    "valueProposition": "Transformation des données en avantage compétitif avec des solutions IA déployées en production en moins de 3 mois."
+  },
+  {
+    "id": "erp-sap",
+    "name": "ERP & SAP S/4HANA",
+    "description": "Implémentation, migration et optimisation des systèmes ERP : SAP S/4HANA, Oracle, migration RISE with SAP, intégration métier.",
+    "targetSectors": ["industrie", "retail", "énergie", "agroalimentaire", "chimie", "logistique"],
+    "keywords": ["ERP", "SAP", "S/4HANA", "Oracle", "RISE", "finance", "supply chain", "gestion"],
+    "valueProposition": "Migration SAP S/4HANA clé en main avec continuité d'activité garantie et optimisation des processus métier."
+  },
+  {
+    "id": "conseil-management",
+    "name": "Conseil en Management & Organisation",
+    "description": "Conseil stratégique et organisationnel : optimisation des processus, gestion du changement, PMO, organisation agile, design thinking.",
+    "targetSectors": ["banque", "assurance", "secteur-public", "santé", "industrie", "énergie"],
+    "keywords": ["conseil", "management", "organisation", "processus", "PMO", "agile", "changement", "stratégie"],
+    "valueProposition": "Amélioration de l'efficacité opérationnelle de 25% grâce à l'optimisation des processus et l'adoption de méthodes agiles."
+  },
+  {
+    "id": "dev-applicatif",
+    "name": "Développement Applicatif & DevOps",
+    "description": "Conception et développement d'applications sur mesure : web, mobile, API, microservices, CI/CD, DevOps, plateformes low-code.",
+    "targetSectors": ["banque", "assurance", "retail", "télécommunications", "média", "secteur-public"],
+    "keywords": ["développement", "application", "DevOps", "microservices", "API", "web", "mobile", "CI/CD", "agile"],
+    "valueProposition": "Livraison d'applications robustes 2x plus rapidement grâce à notre approche DevOps et nos équipes agiles."
+  },
+  {
+    "id": "integration-systemes",
+    "name": "Intégration de Systèmes",
+    "description": "Urbanisation et intégration du SI : architecture d'entreprise, ESB, API management, interopérabilité, middleware.",
+    "targetSectors": ["banque", "assurance", "secteur-public", "santé", "industrie", "logistique"],
+    "keywords": ["intégration", "SI", "architecture", "API", "ESB", "middleware", "urbanisation", "interopérabilité"],
+    "valueProposition": "Simplification du SI et réduction de la dette technique grâce à une architecture moderne orientée API."
+  },
+  {
+    "id": "experience-client",
+    "name": "Expérience Client Digitale",
+    "description": "Conception d'expériences client omnicanales : CRM, portails, e-commerce, UX/UI, personalisation, marketing automation.",
+    "targetSectors": ["retail", "banque", "assurance", "télécommunications", "média", "tourisme"],
+    "keywords": ["CRM", "expérience client", "UX", "e-commerce", "omnicanal", "Salesforce", "marketing", "personnalisation"],
+    "valueProposition": "Augmentation du taux de conversion de 35% grâce à des parcours clients personnalisés et omnicanaux."
+  },
+  {
+    "id": "iot-industrie",
+    "name": "IoT & Industrie 4.0",
+    "description": "Solutions IoT industrielles : maintenance prédictive, jumeau numérique, smart manufacturing, supervision temps réel.",
+    "targetSectors": ["industrie", "énergie", "logistique", "agroalimentaire", "automobile"],
+    "keywords": ["IoT", "industrie 4.0", "maintenance prédictive", "jumeau numérique", "smart factory", "capteurs", "temps réel"],
+    "valueProposition": "Réduction de 40% des arrêts non planifiés grâce à la maintenance prédictive et la supervision IoT temps réel."
+  },
+  {
+    "id": "infrastructure-reseaux",
+    "name": "Infrastructure & Réseaux",
+    "description": "Gestion et modernisation des infrastructures IT : datacenter, réseau, SD-WAN, virtualisation, infogérance.",
+    "targetSectors": ["banque", "assurance", "industrie", "secteur-public", "santé", "télécommunications"],
+    "keywords": ["infrastructure", "réseau", "datacenter", "SD-WAN", "virtualisation", "infogérance", "monitoring"],
+    "valueProposition": "Disponibilité 99,99% et réduction des coûts d'exploitation de 20% grâce à l'automatisation et le monitoring proactif."
+  },
+  {
+    "id": "greenit",
+    "name": "GreenIT & Sobriété Numérique",
+    "description": "Stratégie numérique responsable : bilan carbone du SI, écoconception, optimisation énergétique, reporting RSE.",
+    "targetSectors": ["banque", "assurance", "secteur-public", "énergie", "retail", "industrie"],
+    "keywords": ["GreenIT", "RSE", "sobriété numérique", "écoconception", "carbone", "durabilité", "numérique responsable"],
+    "valueProposition": "Réduction de 30% de l'empreinte carbone du SI tout en maintenant la performance et la qualité de service."
+  },
+  {
+    "id": "rh-changement",
+    "name": "RH & Conduite du Changement",
+    "description": "Accompagnement humain de la transformation : SIRH, formation, adoption digitale, gestion des talents, workplace.",
+    "targetSectors": ["banque", "assurance", "secteur-public", "industrie", "santé", "retail"],
+    "keywords": ["RH", "SIRH", "formation", "changement", "adoption", "talents", "workplace", "digital workplace"],
+    "valueProposition": "Taux d'adoption des outils digitaux de 85% grâce à un accompagnement personnalisé et une conduite du changement structurée."
+  },
+  {
+    "id": "blockchain",
+    "name": "Blockchain & Traçabilité",
+    "description": "Solutions de traçabilité et de confiance numérique : blockchain, smart contracts, tokenisation, supply chain transparente.",
+    "targetSectors": ["banque", "assurance", "logistique", "agroalimentaire", "luxe", "santé"],
+    "keywords": ["blockchain", "traçabilité", "smart contract", "tokenisation", "DLT", "supply chain", "confiance"],
+    "valueProposition": "Traçabilité de bout en bout et réduction de 50% des litiges grâce à une chaîne de confiance immuable."
+  },
+  {
+    "id": "testing-qualite",
+    "name": "Testing & Assurance Qualité",
+    "description": "Stratégie de test et qualité logicielle : automatisation des tests, performance, sécurité applicative, TRA, centre de test.",
+    "targetSectors": ["banque", "assurance", "télécommunications", "retail", "secteur-public"],
+    "keywords": ["test", "qualité", "automatisation", "performance", "QA", "CI/CD", "regression", "TRA"],
+    "valueProposition": "Réduction de 70% du temps de test et détection précoce des défauts grâce à l'automatisation et l'IA."
+  },
+  {
+    "id": "business-intelligence",
+    "name": "Business Intelligence & Reporting",
+    "description": "Solutions de pilotage et de reporting : tableaux de bord, data visualisation, Power BI, Tableau, pilotage de la performance.",
+    "targetSectors": ["banque", "assurance", "retail", "industrie", "secteur-public", "santé"],
+    "keywords": ["BI", "reporting", "tableau de bord", "Power BI", "Tableau", "KPI", "pilotage", "data visualisation"],
+    "valueProposition": "Décisions éclairées en temps réel grâce à des tableaux de bord interactifs connectés à toutes les sources de données."
+  },
+  {
+    "id": "outsourcing-managed",
+    "name": "Outsourcing & Services Managés",
+    "description": "Externalisation IT et services managés : TMA, centre de services, helpdesk, gestion des opérations, SLA garanti.",
+    "targetSectors": ["banque", "assurance", "industrie", "secteur-public", "retail", "énergie"],
+    "keywords": ["outsourcing", "TMA", "services managés", "helpdesk", "centre de services", "SLA", "externalisation"],
+    "valueProposition": "Réduction de 25% des coûts IT avec des SLA garantis et une équipe dédiée disponible 24/7."
+  },
+  {
+    "id": "secteur-public-digital",
+    "name": "Modernisation du Secteur Public",
+    "description": "Transformation digitale des administrations : dématérialisation, portails citoyens, interopérabilité, open data, France Connect.",
+    "targetSectors": ["secteur-public", "santé", "éducation"],
+    "keywords": ["secteur public", "administration", "dématérialisation", "citoyen", "open data", "France Connect", "RGAA"],
+    "valueProposition": "Simplification des démarches administratives et amélioration de la satisfaction usagers de 40% grâce au digital."
+  }
+]
