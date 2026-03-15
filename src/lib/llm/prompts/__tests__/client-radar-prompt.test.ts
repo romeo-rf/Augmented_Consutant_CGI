@@ -31,6 +31,22 @@ describe("buildClientRadarPrompt", () => {
     expect(prompt).toContain("compare.com/1");
   });
 
+  it("requests activity field", () => {
+    expect(prompt).toContain('"activity"');
+  });
+
+  it("requests employeeCount field", () => {
+    expect(prompt).toContain('"employeeCount"');
+  });
+
+  it("requests geographicPresence field", () => {
+    expect(prompt).toContain('"geographicPresence"');
+  });
+
+  it("requests mainClients field", () => {
+    expect(prompt).toContain('"mainClients"');
+  });
+
   it("requests financialTrend field", () => {
     expect(prompt).toContain("financialTrend");
     expect(prompt).toContain("growth");
@@ -75,14 +91,16 @@ describe("buildClientRadarPrompt", () => {
     expect(prompt).toContain("ne devine JAMAIS");
   });
 
+  it("enforces all fields mandatory", () => {
+    expect(prompt).toContain("CHAQUE CHAMP DOIT ÊTRE PRÉSENT");
+  });
+
   it("uses up to 10 company results", () => {
     const research = createMockResearch();
-    // Add 12 company results
     for (let i = 0; i < 12; i++) {
       research.company.push({ title: `Result ${i}`, url: `https://example.com/${i}`, content: "Content", score: 0.5 });
     }
     const p = buildClientRadarPrompt("Test", "IT", research);
-    // Should include at most 10 results (slice(0, 10))
     const parsed = JSON.parse(p.split("INFORMATIONS ENTREPRISE :\n")[1].split("\n\nRÉSULTATS DE RECHERCHE — ACTUALITÉS")[0]);
     expect(parsed.length).toBe(10);
   });

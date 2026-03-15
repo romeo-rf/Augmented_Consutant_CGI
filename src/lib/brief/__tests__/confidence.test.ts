@@ -3,17 +3,19 @@ import { getClientRadarConfidence } from "../confidence";
 import type { ClientRadar, Source } from "../types";
 
 function createMockRadar(overrides: Partial<ClientRadar> = {}): ClientRadar {
-  const defaultSource: Source = { url: "https://example.com", title: "Example" };
   return {
     companyName: "TestCorp",
     sector: "IT",
+    activity: null,
     size: "ETI",
+    employeeCount: null,
     revenue: "100M€",
     headquarters: "Paris",
+    geographicPresence: null,
+    mainClients: [],
     recentNews: [],
     keyFacts: [],
     sources: [],
-    missingInfo: undefined,
     financialTrend: { direction: "unknown", details: "", source: null },
     strategicIssues: [],
     ecosystem: { competitors: [], knownPartners: [], marketPosition: "Non déterminé", source: null },

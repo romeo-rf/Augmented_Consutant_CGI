@@ -27,6 +27,8 @@ import {
   BookOpen,
   Briefcase,
   Tag,
+  AlertTriangle,
+  Linkedin,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -49,21 +51,48 @@ export function ContactProfileCard({ data, onDeepen }: ContactProfileCardProps) 
         <CardTitle className="flex items-center gap-2 text-lg">
           <UserCircle className="h-5 w-5 text-cgi-red" />
           {data.name}
-          {data.linkedinUrl && (
+          {data.linkedinUrl ? (
             <a
               href={data.linkedinUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-800"
+              className="inline-flex items-center gap-1 text-xs text-blue-600 hover:text-blue-800 bg-blue-50 px-2 py-0.5 rounded-full"
             >
-              <ExternalLink className="h-4 w-4" />
+              <Linkedin className="h-3 w-3" />
+              LinkedIn
+              <ExternalLink className="h-3 w-3" />
             </a>
+          ) : (
+            <span className="inline-flex items-center gap-1 text-xs text-muted-foreground bg-muted px-2 py-0.5 rounded-full">
+              <Linkedin className="h-3 w-3" />
+              Non trouvé
+            </span>
           )}
         </CardTitle>
         <p className="text-sm text-muted-foreground">{data.role}</p>
       </CardHeader>
 
       <CardContent className="space-y-5">
+        {/* Bandeau info quand aucune donnée vérifiée trouvée */}
+        {!data.dataFound && (
+          <div className="flex items-start gap-2 rounded-lg bg-amber-50 border border-amber-200 p-3">
+            <AlertTriangle className="h-4 w-4 text-amber-600 mt-0.5 shrink-0" />
+            <div className="text-sm text-amber-800">
+              <p className="font-medium">Aucune information publique trouvée</p>
+              <p className="text-amber-700 mt-0.5 text-xs">
+                {data.missingInfo || "Les conseils ci-dessous sont basés sur le rôle et le secteur."}
+              </p>
+            </div>
+          </div>
+        )}
+
+        {data.dataFound && (
+          <div className="flex items-center gap-2 text-xs text-green-700 bg-green-50 rounded px-2 py-1 w-fit">
+            <CheckCircle className="h-3 w-3" />
+            Informations vérifiées par les sources
+          </div>
+        )}
+
         {/* Zone principale — Comment lui parler (toujours visible) */}
         <div className="space-y-4">
           {/* Ton recommandé */}
@@ -219,7 +248,7 @@ export function ContactProfileCard({ data, onDeepen }: ContactProfileCardProps) 
               className="w-full text-xs"
               onClick={() =>
                 onDeepen(
-                  `Cherche plus d'informations sur le profil de ${data.name} (${data.role}) chez ${data.name}`
+                  `Cherche plus d'informations sur le profil de ${data.name} (${data.role})`
                 )
               }
             >

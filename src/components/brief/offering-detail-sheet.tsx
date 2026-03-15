@@ -114,7 +114,7 @@ export function OfferingDetailSheet({
       if (!res.ok) throw new Error("Erreur serveur");
 
       const pitchData: PitchElements = await res.json();
-      onPitchGenerated?.(match.offering.id, pitchData);
+      onPitchGenerated?.(match.id, pitchData);
     } catch {
       setPitchError("Impossible de générer le pitch. Réessayez.");
     } finally {
@@ -144,7 +144,7 @@ export function OfferingDetailSheet({
               className={match.status === "accepted" ? "bg-green-600 hover:bg-green-700" : ""}
               onClick={() =>
                 onStatusChange(
-                  match.offering.id,
+                  match.id,
                   match.status === "accepted" ? "pending" : "accepted"
                 )
               }
@@ -157,7 +157,7 @@ export function OfferingDetailSheet({
               size="sm"
               onClick={() =>
                 onStatusChange(
-                  match.offering.id,
+                  match.id,
                   match.status === "rejected" ? "pending" : "rejected"
                 )
               }

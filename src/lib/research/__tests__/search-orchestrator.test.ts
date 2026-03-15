@@ -16,10 +16,10 @@ function createContext(overrides: Partial<MeetingContext> = {}): MeetingContext 
 }
 
 describe("buildSearchQueries", () => {
-  it("generates 7+ queries for a full context", () => {
+  it("generates 8+ queries for a full context", () => {
     const queries = buildSearchQueries(createContext());
-    // company + ecosystem + digital + news + competitor + contact + linkedin contact + sector = 8
-    expect(queries.length).toBeGreaterThanOrEqual(7);
+    // company(fin) + news + competitor + ecosystem + digital + activity + contact + linkedin + sector = 9
+    expect(queries.length).toBeGreaterThanOrEqual(8);
   });
 
   it("includes an ecosystem query", () => {
@@ -38,10 +38,18 @@ describe("buildSearchQueries", () => {
     expect(hasDigital).toBe(true);
   });
 
+  it("includes an activity/clients query", () => {
+    const queries = buildSearchQueries(createContext());
+    const hasActivity = queries.some(
+      (q) => q.query.includes("activité") && q.query.includes("clients")
+    );
+    expect(hasActivity).toBe(true);
+  });
+
   it("generates company queries when company is provided", () => {
     const queries = buildSearchQueries(createContext());
     const companyQueries = queries.filter((q) => q.category === "company");
-    expect(companyQueries.length).toBeGreaterThanOrEqual(3);
+    expect(companyQueries.length).toBeGreaterThanOrEqual(4);
   });
 
   it("generates no company queries when company is missing", () => {
